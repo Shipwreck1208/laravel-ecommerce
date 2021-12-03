@@ -1,4 +1,4 @@
-@extends('store.storeLayout') 
+@extends('store.storeLayout')
 @section('content')
     <div class="section">
         <!-- container -->
@@ -33,10 +33,10 @@
                                 <div class="product-body">
                                     <p class="product-category">{{$product->category->name}}</p>
                                     <h3 class="product-name"><a href="{{route('user.view',['id'=>$product->id])}}">{{$product->name}}</a></h3>
-                                    <h4 class="product-price">TK {{$product->discount}} <del class="product-old-price">TK {{$product->price}}</del></h4>
+                                    <h4 class="product-price">$ {{$product->discount}} <del class="product-old-price">$ {{$product->price}}</del></h4>
                                     <div class="product-rating">
                                     </div>
-                                    
+
                                 </div>
                                 <div class="add-to-cart">
                                     <a class="add-to-cart-btn" href="{{route('user.view',['id'=>$product->id])}}"><i class="fa fa-shopping-cart"></i>Purchase</a>
@@ -46,7 +46,7 @@
                         <!-- /product -->
                         @endforeach
                     </div>
-                    
+
                 </div>
                 <!-- /row -->
             </div>
